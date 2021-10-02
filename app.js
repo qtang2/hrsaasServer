@@ -22,6 +22,7 @@ app.use(proxy({
 app.use(historyApiFallback({ 
   whiteList: ['/prod-api']
 }))
+
 app.use((serve(__dirname + "/public")))
 
 
